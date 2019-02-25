@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>html网页布局标签</title>
+<link rel="stylesheet" href="inddex-layput.css">
+</head>
+
+<body>
+<div id="wrapper" class="clearfix"><!--找到要消除float效果的盒子的父级，对其父级进行消除float操作就可以了-->
+	 <header> 网易新闻 国内</header>
+	 <nav id="site-nav">首页</nav>
+	 <div id="index-section1"><!--这里是推荐版块-->
+			<nav id="channel-nav">图片导航</nav><!--这里是图片的推荐，吸引读者的头条-->
+		    <div id="index-side">今日推荐</div><!--这里是今日推荐-->
+	 </div>
+	 <div id="index-section2" ><!--这里是很多小新闻的版块，是主要的浏览部分-->
+		    <div id="index-news">小新闻版块</div><!--很多小新闻块-->
+		    <aside>即时新闻</aside><!--即时新闻版块-->
+	 </div>
+</div>
+	
+<div class="sitemap"><!--底部大盒子有引用地图-->
+	 <div class="sitemap-con">网易新闻地图</div><!--这里面是一个总的地图-->
+</div>
+ 
+<footer><!--最下面的盒子-->
+	 <div id="index-fotter">
+	 <div id="footer-con">网易公司版权所有</div>
+     <nav id="footer-nav">公司简介</nav>
+	 <div id="copyright">版权</div>
+	 </div>
+</footer>
+</body>
+</html>
