@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML表单</title>
+<style>
+	fieldset{margin:4px 5px;border: 2px #30D834 solid;}
+	legend{letter-spacing: 2em;color:red;}
+</style>
+</head>
+
+<body>
+	<form action="#" method="post" name="调用的数据库名">
+		
+<fieldset>
+	<legend>通用的输入型控件:</legend>
+	<p>文本框：<input type="text" placeholder="qq/wechat" disabled ></p>
+	<p>密码框：<input type="password" value="123" readonly></p>
+	<p>隐藏域：<input type="hidden" ></p>
+	<p>文本域:<textarea> 这是文本域</textarea></p>
+</fieldset>
+		
+	<fieldset>
+<h3>新增的HTML5输入型控件</h3>
+	<p>网址:<input type="url" autofocus></p>
+	<p>邮件：<input type="email"></p>
+	<p>数字：<input type="number" min="0" max="100" step="2"></p>
+	<p>数字范围：<input type="range"></p>
+	<p>时间选择器：<input type="data"></p>	
+	<p>色彩选择器：<input type="color"></p>	
+	<p>搜索：<input type="search"></p>
+	<p>电话：<input type="tel" required></p>
+</fieldset>
+   
+<fieldset>
+	<h3>通用的选择型控件</h3>
+	<p>单选按钮组：请选择你的性别：<input type="radio" name="sex" value="boy" checked>男<input type="radio" name="sex" value="girl">女</p>
+	<p>复选按钮单个应用：<input type="checkbox" checked>是否同意协议</p>
+	<p>复选按钮多个应用：请选择你的爱好：<label><input type="checkbox" value="hobbit" checked>吉他</label> 
+		<input type="checkbox" value="hobbit" checked id="piano">                                                  <label for="piano">钢琴</label>
+		<input type="checkbox" value="hobbit" checked>跳舞
+		<input type="checkbox" value="hobbit" checked>养花</p>	
+	<p>下拉列表:<select multiple size="3">
+		<option selected>请选择感兴趣的地方：</option>
+		<optgroup label="在湖的那边">
+		<option value="city">湖南</option> 
+		<option value="city">湖北</option> 
+		</optgroup>
+		<optgroup label="在山的那边">
+		<option value="city">山东</option> 
+		<option value="city">山西</option>	
+		</optgroup>
+	</select></p>	
+</fieldset>
+		
+<fieldset>
+	<h3>新增的输入提示控件(目前有缺陷，用脚本写比较好)</h3>
+		你使用的浏览器是：<input type="text" list="browser">
+		<datalist id="browser">
+			<option value="IE" label="111">IE</option>
+			<option value="Safari" label="222">Safari</option>
+		    <option value="firefox">firefox</option>
+			<option value="Chrome">Chrome</option>
+			<option>Opera</option>
+			<option>others</option>
+		</datalist>
+</fieldset>
+	
+		
+	<fieldset>
+<h3>通用的事件型控件</h3>
+	<p>普通按钮:<input type="button" value="普通按钮"></p>	
+	<p>提交按钮:<input type="submit" value="发送给服务器">把数据提交给服务器</p>	
+	<p>重置按钮：<input type="reset" value="重新填写"></p>
+	<p>提交图像：<input type="img" src="img/2.jpg" alt="浙大校徽" value="进入留言板"></p>
+	<p>上传文件：<input type="file"></p>	
+</fieldset>
+		
+	<p><input type="submit"></p>
+	</form>
+	
+	
+	
+</body>
+</html>
