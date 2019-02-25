@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin:0;padding:0;}
+.handwritting{
+	border:10px #0A9B63 outset;
+	width:1024px;
+	height:329px;
+	padding:6px 10px;
+	background:#E5D798;
+	margin:20px auto 0px;
+}
+.handwritting img{border:2px #B9B2B2 solid;}
