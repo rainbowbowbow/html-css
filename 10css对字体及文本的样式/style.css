@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin: 0px;padding:0px;}
+body{margin:30px auto;}
+
+article{width:1000px;height:auto;border: 2px #7C7A7A solid;margin:0px auto;font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";font-size:14px;}
+
+header{word-spacing: 20px;text-align: center;}
+header h1{text-align: center;word-spacing: 40px;line-height: 60px;}
+header span{color: #706A6A;font-size: 12px;}
+header a{text-decoration: none;}
+
+section {line-height:2em;}
+section h3{margin:20px 0px;}
+.part1,.part2,.part3,.part4{text-indent:2em;}
+figure{text-align: center;}
+
+footer h5{font-size:17px;margin-left: 20px;}
+footer span{margin-left: 20px;}
