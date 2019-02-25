@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>三列布局-中间自适应宽度，两边定宽</title>
+		<style>
+		*{margin:0px;padding:0px;}
+		html,body{height:100%;}
+		.main,.left,.right{height:100%}
+		    .main{background: #D1282B}
+		    .left{width:100px;background: #5ED135}
+		    .right{width:200px;background: #B8AE1E}
+			
+		.main,.left,.right{float:left;}	
+		.main{width:100%;box-sizing:border-box;padding-left:100px;padding-right:205px; }
+			.left{margin-left:-100%;}
+			.right{margin-left:-200px;}
+		</style>
+</head>
+
+<body>
+	<div class="main">主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容</div>
+	<aside class="left">左边边栏</aside>
+	<aside class="right">右边边栏</aside>
+</body>
+</html>
