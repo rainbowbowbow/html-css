@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>盒子的计算</title>
+<style>
+.box1{
+	width:200px;
+	height:200px;
+	padding:25px;
+	border:5px #E71F22 solid;
+	}/*盒子自身的尺寸为:宽：width+padding-left+padding-right+border-                      left+border-right=260px
+	                  高：height+padding-top+padding-bottom+border-top+border-bottom=260px*/
+.box2{
+	width:200px;
+	height:200px;
+	padding:25px;
+	border:5px #E71F22 solid;
+	margin:30px;
+	margin-left:-100px;
+	}/*盒子的占位尺寸：宽：盒子自身的尺寸-宽+margin-left+marign-                          right=260-100+30=190px(无论正负，加上去就行)
+	                高：盒子的自身尺寸-高+margin-top+margin-bottom*/
+</style>
+</head>
+
+<body>
+<div class="box1"> </div>
+2018年10月的最后一天
+<div class="box2"> </div>
+今天是万圣节啊！
+</body>
+</html>
