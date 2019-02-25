@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>表格</title>
+	<style>
+		body{*margin:0;padding:0;background:url(img/5.jpg) no-repeat;background-size: 100% auto;}
+		#table{border-collapse:collapse;vertical-align: middle;margin: 200px auto 40px;font-family: "宋体", "微软雅黑";font-size: 16px; color:#BCB5B5;padding-left:50px;opacity:50;}
+		h1{font-family: "宋体", "微软雅黑";margin-left: 80px;}
+		#idcard{padding-left: 15px; width: 249px;height: 37px;border:#D3CECF 1px solid;margin-bottom: 10px;border-radius: 5px 5px;margin: 10px 15px;}
+		#sex{margin: 10px 20px;}
+		#sex:hover{cursor:pointer;}
+		#hobbit{margin: 10px 20px;}
+		#hobbit:hover{cursor:pointer;}
+		#hobbit1{margin: 10px 15px;}
+		#hobbit1:hover{cursor:pointer;}
+		#xieyi{text-decoration:none;color:aliceblue;margin: 10px 10px;}
+		select{border-radius: 5px 5px;width: 260px;height: 37px;margin: 10px 15px;}
+		#submit{margin: 10px 40px;border-radius: 5px 5px;}
+	</style>
+</head>
+
+<body >
+	<form action="#" method="post" name="user-login">
+<table id="table">
+  <tr><td><h1>用户登录</h1></td></tr>
+  <tbody>
+    <tr>
+     
+      <td ><input type="text" placeholder="身份证号码" id="idcard" required autofocus></td>
+      <td >请填入你的身份证号</td>
+    </tr>
+    <tr>
+  
+      <td><input type="text" placeholder="姓名" id="idcard" required></td>
+      <td>请填入你的姓名</td>
+    </tr>
+    <tr>
+      
+      <td><input type="email" placeholder="邮箱" id="idcard" required></td>
+      <td>请填入你的邮箱</td>
+    </tr>
+    <tr>
+      
+      <td><input type="password" placeholder="密码" id="idcard" required></td>
+      <td>请填入你的密码</td>
+    </tr>
+    <tr>
+      
+      <td><label><input type="radio" name="sex" id="sex">美女</label><label> <input type="radio" name="sex" id="sex">帅哥</label></td>
+      <td>请填入你的性别</td>
+    </tr>
+    <tr>
+      
+      <td><label><input type="checkbox" name="hobbit" id="hobbit">睡觉 </label><label><input type="checkbox" name="hobbit" id="hobbit">学习 </label><label><input type="checkbox" name="hobbit" id="hobbit">挣钱</label> </td>
+      <td>请填入你的爱好</td>
+    </tr>
+    <tr>
+      
+      <td><select>
+		  <option selected>密码提示</option>
+		  <option>高中班头的名字</option>
+		  <option>我今年几岁</option>
+		   <option>我的生日</option>
+		  </select></td>
+      <td>当不记得密码时，通过提示可以找回</td>
+    </tr>
+    <tr>
+      <td colspan="3"><label><input type="checkbox" required id="hobbit1">是否同意<a href="#" id="xieyi">xx协议</a></label></td>
+    </tr>
+    <tr>
+      <td colspan="3"><input type="submit" value="提交登陆" id="submit"> <input type="reset" value="重新填写" id="submit"></td>
+    </tr>
+  </tbody>
+</table>
+</form>
+</body>
+</html>
