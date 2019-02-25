@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>clear消除属性</title>
+<style>
+	#box{border:5px #26F00F groove;}
+	#box-a{width:200px;height:200px;background:#E8060A;float:left;}
+	#box-b{width:300px;height:300px;background:#C7D114;float:right;}
+	#box-c{width:300px;height:300px;background:#1D85B7;clear:both}
+	.clearfix{zoom:1;}/*zoom属性：IE浏览器的专用属性，这一句是专门针对老版本的IE浏览器所写的，为了兼容*/
+	.clearfix:after{/*:after 伪选择对象---在这个对象被浏览器渲染之后添加一定的内容*/
+		content:"随便写啥都可以";/*content属性：添加的内容写在这个属性值里面，这个属性是专门针对伪对象的，必须要写！空值也要写*/
+		display:block;/*将添加进去的内容转化为块状元素*/
+		visibility: hidden;/*visibility：可视化属性，控制元素是否可见，但无论是否可见，都为其保留物理空间（display:none 同样不可见，但是不保留物理空间）*/
+		height:0;/*将添加进去的内容高度进行设置，当设置为0时，消除其占位*/
+		clear:both;/*将添加进去的对象做为消除浮动的对象，实现外围容器中有内容存在，因此可以自动判定高度，解决塌陷*/              
+	}
+</style>
+</head>
+
+<body>
+<div id="box" class="clearfix">
+	<div id="box-a"> box-a</div>
+	<div id="box-b"> box-b</div>
+	<div id="box-c"> box-c</div>
+</div>
+</body>
+</html>
