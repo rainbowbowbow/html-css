@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+p{font-family:'微软雅黑';font-size:18px;line-height:32px;color:black;}
+p a{color:yellow;}
+div{border:3px #eee double;width:650px;}
+h1{font-family:'微软雅黑';color:red;}
+h4{font-family:'微软雅黑';color:gray;font-size:14px;font-weight:normal;}
+a{color:gray;}
